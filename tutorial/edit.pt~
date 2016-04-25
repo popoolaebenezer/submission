@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Output</title>
+</head>
+<body>
+<p>Please click the reset button to go back<form method="POST"
+      action="${request.current_route_url()}">
+    <input type="submit" name="form.delete" value="Reset"/></p>
+</form>
+<p>${content}</p>
+
+</body>
+</html>

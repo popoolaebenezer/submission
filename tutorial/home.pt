@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Evaluate</title>
+</head>
+<body>
+<p>Welcome to this site</p>
+<p>Enter the wiki url you would like to view its table of content</p>
+<form method="POST"
+      action="${request.current_route_url()}">
+    <input name="new_name"/>
+    <input type="submit" name="form.edit" value="Go"/>
+</form>
+</body>
+</html>

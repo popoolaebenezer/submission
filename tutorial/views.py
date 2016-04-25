@@ -1,5 +1,4 @@
 import sys
-sys.path.append('home/popoola/popoola_ebenezer/submission/tutorial/')
 from . import scrap_wiki as s
 from pyramid.view import (
     view_config,
@@ -23,8 +22,10 @@ class TutorialViews(object):
     # The response page is "scraped.pt"
     @view_config(request_method='POST', renderer='scraped.pt')
     def scraping(self):
+        from bs4 import BeautifulSoup
         new_name = self.request.params['new_name']
         table = s.scrap(new_name)
+        
         return {'content': table}
        
         

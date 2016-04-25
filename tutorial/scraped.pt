@@ -8,7 +8,7 @@
       action="${request.current_route_url()}">
     <input type="submit" name="form.reset" value="Reset"/>
 </form></p>
-<p>${content}</p>
+${content}
 
 </body>
 </html>
